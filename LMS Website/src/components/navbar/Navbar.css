@@ -11,8 +11,15 @@
   align-items: center;
   padding: 0 24px;
 }
+ul {
+
+  margin:50px;
+  align-items: center;
+}
 li {
   list-style: none;
+
+  
 }
 .nav_left_ul li a {
   font-size: large;
