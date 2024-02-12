@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="Grade.css">
-</head>
-<body>
+    <link rel="stylesheet" href="Grade.css" />
+  </head>
+  <body>
+    <script>
+      window.onload = function () {
+        fetch("../../components/navbar/Navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.body.innerHTML = data + document.body.innerHTML;
+            var importedCSS = document.createElement("link");
+
+            importedCSS.rel = "stylesheet";
+            importedCSS.href = "../../components/navbar/Navbar.css";
+            document.head.appendChild(importedCSS);
+            var importedScript = document.createElement("script");
+            importedScript.src = "../../components/navbar/navbar.js";
+            document.head.appendChild(importedScript);
+          });
+      };
+    </script>
     <section class="profile">
+<<<<<<< HEAD
         <div class="profile-info">
             <img src="defaultAvatar.png" alt="" id="profilePicture">
             <span id="userName">Amanuel Wonde</span>
@@ -16,15 +34,26 @@
             <p>Courses I  am Taking</p>
         </div>
        </section>
+=======
+      <div class="profile-info">
+        <img src="defaultAvatar.png" alt="" id="profilePicture" />
+        <span id="userName">Amanuel</span>
+      </div>
+      <div class="profile-description">
+        <p>Courses I am Taking</p>
+      </div>
+    </section>
+>>>>>>> 948561f16d8cb481bc3961aa33058c4e2112f6b5
 
-   <section class="courses">
-    <table>
+    <section class="courses">
+      <table>
         <tr>
-            <td >Course Name</td>
-            <td>Credit Hour</td>
-            <td >Grade</td>
+          <td>Course Name</td>
+          <td>Credit Hour</td>
+          <td>Grade</td>
         </tr>
         <tr>
+<<<<<<< HEAD
             <td class="courseSubject">Java For Backend</td>
             <td class="creditHr">4</td>
             <td id="grade1">-</td>
@@ -48,12 +77,33 @@
             <td class="courseSubject">Computer Organization and Algorithm</td>
             <td class="creditHr">3</td>
             <td id="grade5">-</td>
+=======
+          <td class="courseSubject">Course 1</td>
+          <td class="creditHr">4</td>
+          <td id="grade1">-</td>
         </tr>
-        
-
-    </table>
-
-    
-   </section>
-</body>
+        <tr>
+          <td class="courseSubject">Course 2</td>
+          <td class="creditHr">4</td>
+          <td id="grade2">-</td>
+        </tr>
+        <tr>
+          <td class="courseSubject">Course 3</td>
+          <td class="creditHr">4</td>
+          <td id="grade3">-</td>
+        </tr>
+        <tr>
+          <td class="courseSubject">Course 4</td>
+          <td class="creditHr">3</td>
+          <td id="grade4">-</td>
+        </tr>
+        <tr>
+          <td class="courseSubject">Course 5</td>
+          <td class="creditHr">3</td>
+          <td id="grade5">-</td>
+>>>>>>> 948561f16d8cb481bc3961aa33058c4e2112f6b5
+        </tr>
+      </table>
+    </section>
+  </body>
 </html>
