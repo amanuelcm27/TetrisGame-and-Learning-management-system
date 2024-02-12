@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messaging app</title>
+    <link rel="stylesheet" href="../messaging//Messaging.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="../messaging/messaging.js"></script>
+  </head>
+  <body>
+    <div class="texting_area hid" id="texting_area">
+      <div class="people_profile">
+        <span
+          class="material-symbols-outlined"
+          style="text-align: right; padding: 12px 2px"
+          onclick="handleShowMessagingWrapper()"
+        >
+          chevron_left
+        </span>
+        <img src="/assets/download.jpeg" alt="" />
+        <div>
+          <p style="font-size: large; color: #191986; font-weight: 600">
+            Amanuel Wonde
+          </p>
+          <p style="color: rgb(117, 108, 108); margin-top: 3px">online</p>
+        </div>
+      </div>
+      <div class="message_display_area"></div>
+      <textarea
+        name=""
+        id=""
+        cols="40"
+        rows="4"
+        placeholder="Write a message..."
+      ></textarea>
+      <span
+        class="material-symbols-outlined"
+        style="text-align: right; color: blue; cursor: pointer"
+      >
+        send
+      </span>
+    </div>
+  </body>
+</html>

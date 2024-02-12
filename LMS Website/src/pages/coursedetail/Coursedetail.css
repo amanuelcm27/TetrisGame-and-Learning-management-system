@@ -29,7 +29,7 @@
   font-weight: 600;
 }
 .course_detail li:hover {
-  border-bottom: 2px solid blue;
+  color: blue;
 }
 
 .courseoutline_title_wrapper {
