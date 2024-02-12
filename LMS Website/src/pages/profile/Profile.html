@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Profile.css" />
+    <script src="./profile.js"></script>
+  </head>
+  <body>
+    <script>
+      window.onload = function () {
+        fetch("../../components/navbar/Navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.body.innerHTML = data + document.body.innerHTML;
+            var importedCSS = document.createElement("link");
+
+            importedCSS.rel = "stylesheet";
+            importedCSS.href = "../../components/navbar/Navbar.css";
+            document.head.appendChild(importedCSS);
+            var importedScript = document.createElement("script");
+            importedScript.src = "../../components/navbar/navbar.js";
+            document.head.appendChild(importedScript);
+          });
+      };
+    </script>
+    <div class="bodyContainer">
+      <div class="profile_img_wrapper" style="display: flex">
+        <img
+          class="profile_img"
+          src="/assets//download.jpeg"
+          alt=""
+          width="100"
+          height="100"
+          style="border-radius: 50%"
+        />
+        <div style="padding: 10px">
+          <p style="font-size: 28px; color: #d06d0fc1; font-weight: 500">
+            Amanuel Wonde
+          </p>
+          <p style="font-size: large; color: gray">
+            3 <span style="vertical-align: super">rd</span> Year/ Software
+            Engineering
+          </p>
+          <p style="font-size: large; color: gray">ID: ETS 0166/14</p>
+        </div>
+      </div>
+      <div
+        style="
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 12px;
+        "
+      >
+        <div
+          style="
+            width: 45%;
+            border: 1px solid #d06d0fc1;
+            border-radius: 10px;
+            box-shadow: 2px gray;
+          "
+        >
+          <div
+            style="
+              width: 80%;
+              margin: auto;
+              padding-top: 16px;
+              display: flex;
+              justify-content: space-between;
+            "
+          >
+            <p style="font-size: large; color: #d06d0fc1; font-weight: 600">
+              User Detail
+            </p>
+            <p
+              style="
+                font-weight: 500;
+                font-size: medium;
+                color: rgb(14, 14, 197);
+                cursor: pointer;
+              "
+              onclick="editProfile()"
+            >
+              Edit Profile
+            </p>
+          </div>
+          <form action="" style="margin-left: 8px">
+            <label for="fname" style="margin-top: 12px">First Name</label>
+            <input type="text" id="fname" value="Amanuel Wonde" />
+
+            <label for="lname">Last Name</label>
+            <input type="text" name="" id="lname" value="Tessema" />
+
+            <label for="email">Email Address</label>
+            <input type="text" id="email" value="amanuelwt@gmail.com" />
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" value="+251 967 29 24 97" />
+
+            <label for="country">Country</label>
+            <input type="text" value="Ethiopa" id="country" />
+
+            <label for="city">City</label>
+            <input type="text" id="city" value="Addis Ababa" />
+            <input type="submit" value="Update Profile" id="submitBtn" />
+          </form>
+        </div>
+        <div
+          style="
+            width: 45%;
+            border: 1px solid #d06d0fc1;
+            border-radius: 10px;
+            box-shadow: 2px gray;
+          "
+        >
+          <p
+            style="
+              color: #e26d00c1;
+              font-size: large;
+              padding: 10px;
+              font-weight: 600;
+            "
+          >
+            Course detail
+          </p>
+          <ul>
+            <li>Internet Programming</li>
+            <li>Object Oriented Programming</li>
+            <li>Data sturucture and algorithm</li>
+            <li>System analysis and modeling</li>
+            <li>Computer architechture and organization</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

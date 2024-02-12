@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.bodyContainer {
+  width: 80%;
+  margin: auto;
+  margin-top: 6px;
+}
+input {
+  display: block;
+  padding: 8px 16px;
+  font-size: large;
+  border: none;
+  color: rgb(12, 12, 83);
+  border-radius: 5px;
+}
+label {
+  display: block;
+  margin-top: 12px;
+  font-size: large;
+  color: rgb(13, 13, 173);
+  font-weight: 600;
+}
+#submitBtn {
+  background-color: rgb(15, 15, 153);
+  color: white;
+  margin: 10px;
+  border-radius: 3px;
+}
+li {
+  list-style: none;
+  font-size: large;
+  color: blue;
+}
+ul {
+  line-height: 24px;
+  padding: 16px;
+}

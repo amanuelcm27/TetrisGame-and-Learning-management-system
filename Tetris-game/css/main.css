@@ -1,0 +1,40 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    background: rgba(112, 124, 46, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  canvas {
+    border: 10px dashed rgb(5, 5, 5);
+    box-shadow: 10px 10px 20px black;
+  }
+  button {
+    padding: 20px;color: rgb(246, 244, 244);background-color: rgb(255, 28, 28); margin: 13px;border: none;
+    border-radius: 10px;
+    display: none;
+    box-shadow: 10px 10px 20px black;
+
+  }
+  button.start {
+    display: block;
+
+  }
+
+  button:active {
+    background-color: burlywood;
+    color:black;
+  }
+  .score {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(213, 23, 23);
+    font-size: 2rem;
+    padding:30px;
+    text-shadow: 10px 10px 20px black;
+  }

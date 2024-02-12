@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <script>
+      window.onload = function () {
+        fetch("../../components/navbar/Navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.body.innerHTML = data + document.body.innerHTML;
+            var importedCSS = document.createElement("link");
+
+            importedCSS.rel = "stylesheet";
+            importedCSS.href = "../../components/navbar/Navbar.css";
+            document.head.appendChild(importedCSS);
+            var importedScript = document.createElement("script");
+            importedScript.src = "../../components/navbar/navbar.js";
+            document.head.appendChild(importedScript);
+          });
+      };
+    </script>
+    <p style="font-size: 28px; margin: 20px; color: rgb(10, 10, 199)">
+      Dashboard
+    </p>
+    <div class="activities">
+      <p
+        style="
+          margin: 12px;
+          font-size: 24px;
+          color: #d06d0fc1;
+          font-weight: 600;
+        "
+      >
+        Timeline
+      </p>
+      <div style="border: 1px solid rgb(143, 138, 138); border-radius: 6px">
+        <p
+          style="
+            margin: 12px;
+            font-size: 16px;
+            color: #d06d0fc1;
+            font-weight: 600;
+          "
+        >
+          Friday, 16 January 2024
+        </p>
+        <div class="activity_container">
+          <div class="activity_childe">
+            <p style="color: rgb(43, 34, 34)">11:05</p>
+            <i
+              class="fa fa-solid fa-book"
+              style="color: #d06d0fc1; font-size: 28px; margin-left: 6px"
+            ></i>
+            <a href="" class="activity_title"
+              >Introduction to Internet Programming part 1</a
+            >
+          </div>
+          <button>Done</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

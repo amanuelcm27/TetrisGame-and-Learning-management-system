@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Tetris </title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <button id="Restart">Clear</button>
+    <button id="startGame" class="start">Start</button>
+    <button id="endGame" class="end">End</button>
+    <audio id ="begin"src="audio/tetris audio.mp3" loop></audio>
+    <audio id="scoring" src="audio/score.mp3"></audio>
+    <audio id="end" src="audio/end.mp3"></audio>
+    <canvas width="320" height="640" id="game"></canvas>
+    <audio id="clearRowSound" src="path/to/your/audiofile.mp3"></audio>
+    <div>
+      <p id = "game_score"class="score">Score: 0</p>
+      <img src="images/controls.png" alt="">
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/tetrominos.js"></script>
+    <script src="js/gameplay.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

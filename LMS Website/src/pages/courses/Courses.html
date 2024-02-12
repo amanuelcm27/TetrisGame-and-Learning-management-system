@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Courses.css" />
+  </head>
+  <body>
+    <script>
+      window.onload = function () {
+        fetch("../../components/navbar/Navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.body.innerHTML = data + document.body.innerHTML;
+            var importedCSS = document.createElement("link");
+            importedCSS.rel = "stylesheet";
+            importedCSS.href = "../../components/navbar/Navbar.css";
+            document.head.appendChild(importedCSS);
+          });
+      };
+    </script>
+    <p style="margin: 16px; margin-left: 32px; font-size: 24px; color: blue">
+      My Courses
+    </p>
+    <div class="course_container">
+      <p
+        class="title"
+        style="
+          margin: 12px;
+          font-size: 24px;
+          color: #d06d0fc1;
+          font-weight: 600;
+        "
+      >
+        Course Overview
+      </p>
+      <input type="search" placeholder="Search for course" />
+
+      <div class="courses">
+        <div class="course">
+          <div class="course_logo_wrapper">
+            <p class="course_logo">IP</p>
+          </div>
+          <a
+            href="/src/pages/coursedetail/Coursedetail.html"
+            class="course_name"
+            >Internet Programming</a
+          >
+          <div class="course_desc">
+            <p>25%</p>
+            <p>more</p>
+          </div>
+        </div>
+
+        <div class="course">
+          <div class="course_logo_wrapper">
+            <p class="course_logo">OOP</p>
+          </div>
+          <a
+            href="/src/pages/coursedetail/Coursedetail.html"
+            class="course_name"
+            >Object Oriented Programming</a
+          >
+          <div class="course_desc">
+            <p>25%</p>
+            <p>more</p>
+          </div>
+        </div>
+
+        <div class="course">
+          <div class="course_logo_wrapper">
+            <p class="course_logo">DSA</p>
+          </div>
+          <a
+            href="/src/pages/coursedetail/Coursedetail.html"
+            class="course_name"
+            >Data Structures And Algorithm</a
+          >
+          <div class="course_desc">
+            <p>25%</p>
+            <p>more</p>
+          </div>
+        </div>
+
+        <div class="course">
+          <div class="course_logo_wrapper">
+            <p class="course_logo">COA</p>
+          </div>
+          <a
+            href="/src/pages/coursedetail/Coursedetail.html"
+            class="course_name"
+            >Computer Architecture and Organization</a
+          >
+          <div class="course_desc">
+            <p>25%</p>
+            <p>more</p>
+          </div>
+        </div>
+
+        <div class="course">
+          <div class="course_logo_wrapper">
+            <p class="course_logo">SAM</p>
+          </div>
+          <a
+            href="/src/pages/coursedetail/Coursedetail.html"
+            class="course_name"
+            >System Analysis and Modeling</a
+          >
+          <div class="course_desc">
+            <p>25%</p>
+            <p>more</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

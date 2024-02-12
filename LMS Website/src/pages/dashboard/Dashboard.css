@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.activities {
+  width: 80%;
+  margin: auto;
+}
+.activity_container {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px;
+  border: 1px solid rgba(208, 113, 24, 0.59);
+  padding: 8px;
+  border-radius: 8px;
+}
+.activity_childe {
+  display: flex;
+  margin-left: 12px;
+  color: rgb(18, 18, 168);
+}
+
+.activity_childe a {
+  margin-left: 12px;
+  color: rgb(18, 18, 168);
+  text-decoration: none;
+}
+.activity_container button {
+  padding: 6px;
+  border-radius: 6px;
+}
