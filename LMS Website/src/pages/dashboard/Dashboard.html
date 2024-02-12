@@ -13,6 +13,45 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <style>
+      .activity-card {
+        width: 100%;
+        border : 1px solid rgb(129, 127, 127);
+        border-radius: 10px;
+        box-shadow: 2px 2px 3px black;
+      }
+      span {
+        font-size: 1.5rem;
+        color: rgb(255, 170, 0);
+        font-family: 'Times New Roman', Times, serif;
+        padding: 20px;
+      }
+      button{ 
+        padding: 10px;
+        background-color: rgb(34, 76, 243);
+        color:rgb(255, 255, 255);
+        border:none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        
+      }
+      button:active {
+        background-color: rgb(22, 230, 22);
+        
+      }
+      select {
+        padding: 10px;
+        margin: 10px;
+        background-color: rgb(95, 93, 93);
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+
+      }
+  
+    
+    </style>
   </head>
   <body>
     <script>
@@ -36,41 +75,118 @@
       Dashboard
     </p>
     <div class="activities">
-      <p
-        style="
-          margin: 12px;
-          font-size: 24px;
-          color: #d06d0fc1;
-          font-weight: 600;
-        "
-      >
-        Timeline
-      </p>
-      <div style="border: 1px solid rgb(143, 138, 138); border-radius: 6px">
-        <p
+      <div class="activity-card">
+        <span>Timeline </span><br>
+        <div class="filters">
+          <select name="due date" id="">
+            <option value="All">All</option>
+            <option value="overdue">overdue</option>
+            <option value="next7">Next 7 days</option>
+            <option value="next7">Next 14 days</option>
+            <option value="next7">Next 30 days</option>
+          </select>
+          <select name="sort course" id="">
+            <option value="All">sort by dates</option>
+            <option value="overdue">sort by course</option> 
+          </select>
+        </div>
+        <hr width="95%" style=" margin: 0px auto;">
+        <div class="activity-content">
+          <p
           style="
             margin: 12px;
             font-size: 16px;
             color: #d06d0fc1;
-            font-weight: 600;
-          "
-        >
-          Friday, 16 January 2024
+            font-weight: 600;">
+          saturday, 10 october 2024
         </p>
         <div class="activity_container">
           <div class="activity_childe">
             <p style="color: rgb(43, 34, 34)">11:05</p>
             <i
-              class="fa fa-solid fa-book"
+              class="fa fa-solid fa-database"
+              style="color: #d06d0fc1; font-size: 28px; margin-left: 6px"
+            ></i>
+            <a href="" class="activity_title"
+              >Digital Logic design</a
+            >
+          </div>
+          <button style="padding:10px">done</button>
+        </div>
+        </div>
+        <div class="activity-content">
+          <p
+          style="
+            margin: 12px;
+            font-size: 16px;
+            color: #d06d0fc1;
+            font-weight: 600;">
+          monday, 11 july 2024
+        </p>
+        <div class="activity_container">
+          <div class="activity_childe">
+            <p style="color: rgb(43, 34, 34)">11:05</p>
+            <i
+              class="fa fa-solid fa-database"
+              style="color: #d06d0fc1; font-size: 28px; margin-left: 6px"
+            ></i>
+            <a href="" class="activity_title"
+              >Basic computer Arthimetic</a
+            >
+          </div>
+          <button style="padding:10px">done</button>
+        </div>
+        </div>
+        <div class="activity-content">
+          <p
+          style="
+            margin: 12px;
+            font-size: 16px;
+            color: #d06d0fc1;
+            font-weight: 600;">
+          wednesday, 16 August 2024
+        </p>
+        <div class="activity_container">
+          <div class="activity_childe">
+            <p style="color: rgb(43, 34, 34)">11:05</p>
+            <i
+              class="fa fa-solid fa-database"
+              style="color: #d06d0fc1; font-size: 28px; margin-left: 6px"
+            ></i>
+            <a href="" class="activity_title"
+              >Introduction to Java</a
+            >
+          </div>
+          <button style="padding:10px">done</button>
+        </div>
+        </div>
+        <div class="activity-content">
+          <p
+          style="
+            margin: 12px;
+            font-size: 16px;
+            color: #d06d0fc1;
+            font-weight: 600;">
+          Friday, 30 Feburary 2024
+        </p>
+        <div class="activity_container">
+          <div class="activity_childe">
+            <p style="color: rgb(43, 34, 34)">11:05</p>
+            <i
+              class="fa fa-solid fa-database"
               style="color: #d06d0fc1; font-size: 28px; margin-left: 6px"
             ></i>
             <a href="" class="activity_title"
               >Introduction to Internet Programming part 1</a
             >
           </div>
-          <button>Done</button>
+          <button style="padding:10px">done</button>
         </div>
+        </div>
+
       </div>
+      
+
     </div>
   </body>
 </html>
