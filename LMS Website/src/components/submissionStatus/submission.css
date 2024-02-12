@@ -3,6 +3,8 @@
     line-height:24px;
 }
 
+
+
 .wholeContainer{
     font-size:20px;
     display:flex;
@@ -22,6 +24,7 @@
 
 thead{
     text-align:center;
+    color: #b85b05;
 }
 
 #thead-positioning-div{
@@ -123,7 +126,7 @@ a:active, a:hover{
     height: 200px;
 }
 h3{
-    color:rgb(147, 59, 59);
+    color:#b85b05;
 }
 
 
