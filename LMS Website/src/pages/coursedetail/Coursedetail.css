@@ -25,11 +25,12 @@
   list-style: none;
   margin-right: 12px;
   cursor: pointer;
-  font-size: large;
+  font-size: 24px;
   font-weight: 600;
+  color: rgb(22, 22, 129);
 }
 .course_detail li:hover {
-  border-bottom: 2px solid blue;
+  color: blue;
 }
 
 .courseoutline_title_wrapper {

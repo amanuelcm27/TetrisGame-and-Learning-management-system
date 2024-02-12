@@ -1,40 +1,55 @@
-html, body {
-    height: 100%;
-    margin: 0;
-  }
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 
-  body {
-    background: rgba(112, 124, 46, 0.5);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Press Start 2P", sans-serif;
+  background: #222;
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+canvas {
+  margin-left: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px black;
+}
+button {
+  font-family: "Press Start 2P", sans-serif;
+  color: #fff;
+  background-color: #60b347;
+  padding: 20px;
+  margin-left: 25px;
+  border: none;
+  border-radius: 10px;
+  display: none;
+}
+button.start {
+  display: block;
+}
 
-  canvas {
-    border: 10px dashed rgb(5, 5, 5);
-    box-shadow: 10px 10px 20px black;
-  }
-  button {
-    padding: 20px;color: rgb(246, 244, 244);background-color: rgb(255, 28, 28); margin: 13px;border: none;
-    border-radius: 10px;
-    display: none;
-    box-shadow: 10px 10px 20px black;
+button:active {
+  background-color: burlywood;
+  color: black;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #222;
+}
 
-  }
-  button.start {
-    display: block;
-
-  }
-
-  button:active {
-    background-color: burlywood;
-    color:black;
-  }
-  .score {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(213, 23, 23);
-    font-size: 2rem;
-    padding:30px;
-    text-shadow: 10px 10px 20px black;
-  }
+.score {
+  color: #fff;
+  font-size: 24px;
+  padding: 0 30px 20px 30px;
+}
+.instruction {
+  display: flex;
+  justify-content: center;
+}
+.buttons {
+  font-size: 18px;
+}
