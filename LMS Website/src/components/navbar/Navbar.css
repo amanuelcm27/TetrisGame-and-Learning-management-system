@@ -2,8 +2,18 @@
   margin: 0;
   padding: 0;
 }
+button{
+  background-image: linear-gradient(to right, purple, indigo);
+ 
+}
 .nav {
   display: flex;
+  
+ margin : 5px;
+ border-radius: 15px;
+ filter: drop-shadow(5px 5px 10px indigo);
+   background-image: linear-gradient(to right, purple, indigo);
+
   justify-content: space-between;
   background-color: rgb(6, 6, 143);
   height: 50px;
