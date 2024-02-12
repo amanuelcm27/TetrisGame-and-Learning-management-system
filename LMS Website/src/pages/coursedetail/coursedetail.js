@@ -51,6 +51,34 @@ function fetchGrade(htmlPath, cssPath, jsPath) {
     });
 }
 
-function fetchMessage() {}
+function fetchMessage(htmlPath, cssPath, jsPath) {
+  fetch(htmlPath)
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("sub_body").innerHTML = data;
+      var importedCSS = document.createElement("link");
 
-function fetchActivities() {}
+      importedCSS.rel = "stylesheet";
+      importedCSS.href = cssPath;
+      document.head.appendChild(importedCSS);
+      var importedScript = document.createElement("script");
+      importedScript.src = jsPath;
+      document.head.appendChild(importedScript);
+    });
+}
+
+function fetchActivities(htmlPath, cssPath, jsPath) {
+  fetch(htmlPath)
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("sub_body").innerHTML = data;
+      var importedCSS = document.createElement("link");
+
+      importedCSS.rel = "stylesheet";
+      importedCSS.href = cssPath;
+      document.head.appendChild(importedCSS);
+      var importedScript = document.createElement("script");
+      importedScript.src = jsPath;
+      document.head.appendChild(importedScript);
+    });
+}
