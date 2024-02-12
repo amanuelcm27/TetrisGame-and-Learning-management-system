@@ -57,3 +57,8 @@ function changeLastModified() {
 function updateSubmissionStatus() {
     document.getElementById("submissionStatus").innerText = "Submission Received";
 }
+function scrollToSubmit() {
+    document.getElementById('submit').scrollIntoView({ behavior: 'smooth' });
+    submit.style.cssText="transform:scale(1.1); transition-delay:0.8; transition-duration:2s; margin:20px;"
+
+}
