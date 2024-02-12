@@ -17,6 +17,7 @@
 .activity_childe {
   display: flex;
   margin-left: 12px;
+  padding: 20px;
   color: rgb(18, 18, 168);
 }
 
@@ -24,8 +25,4 @@
   margin-left: 12px;
   color: rgb(18, 18, 168);
   text-decoration: none;
-}
-.activity_container button {
-  padding: 6px;
-  border-radius: 6px;
 }

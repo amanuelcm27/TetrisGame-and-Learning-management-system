@@ -9,17 +9,17 @@
 <body>
     <div class="wholeContainer">
         <section class="shortDescription">
-            <div class="contain">
-                <div>
-                    <h3>End Of Course Summative Assignment</h3>
-                    <div class="toDo">To do: Make a submission</div>
-                </div>
+            <h3>End Of Course Summative Assignment</h3>
+            <div class="contain">                  
+                <div class="toDo">To do: Make a submission</div>
+              
                  <div class="assignmentStatusDiv">
                     <p>Opened: <span class="opendDate" datetime="2024-02-03T12:30:00">February 03, 2024 at 12:30 PM</span> </p>
                     <p>Due: <span class="dateOfSubmission"  datetime="2024-02-23T12:30:00">February 23, 2024 at 12:30 PM</span></p>
                  </div>
-               
+                 <button class="addSubmission-btn" onclick="scrollToSubmit()" >Add Submission</button>
             </div>
+          
         </section>
     
         <section>
@@ -55,7 +55,7 @@
                                 <label for="AssignmentTwoInput">Submit file:</label>
                                 <input type="file" name="file" id="AssignmentTwoInput"  required accept=".pdf">
                                 <br>
-                                <input type="submit" value="Submit" id="submit">
+                                <input type="submit" value="Submit" id="submit" class="addSubmission-btn">
                             </form>
                         </td>
                     </tr>
