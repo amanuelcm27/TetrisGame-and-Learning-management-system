@@ -12,15 +12,12 @@
     <script src="../messaging/messaging.js"></script>
   </head>
   <body>
-    <div class="texting_area hid" id="texting_area">
+    <div
+      class="texting_area"
+      id="texting_area"
+      style="width: 500px; margin: auto"
+    >
       <div class="people_profile">
-        <span
-          class="material-symbols-outlined"
-          style="text-align: right; padding: 12px 2px"
-          onclick="handleShowMessagingWrapper()"
-        >
-          chevron_left
-        </span>
         <img src="/assets/download.jpeg" alt="" />
         <div>
           <p style="font-size: large; color: #191986; font-weight: 600">
@@ -29,7 +26,7 @@
           <p style="color: rgb(117, 108, 108); margin-top: 3px">online</p>
         </div>
       </div>
-      <div class="message_display_area"></div>
+      <div class="message_display_area" style="height: 300px"></div>
       <textarea
         name=""
         id=""
