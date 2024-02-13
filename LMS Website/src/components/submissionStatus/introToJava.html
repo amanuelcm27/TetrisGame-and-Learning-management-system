@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="submission.css">
+</head>
+<body>
+    <script>
+        window.onload = function () {
+          fetch("../../components/navbar/Navbar.html")
+            .then((response) => response.text())
+            .then((data) => {
+              document.body.innerHTML = data + document.body.innerHTML;
+              var importedCSS = document.createElement("link");
+              importedCSS.rel = "stylesheet";
+              importedCSS.href = "../../components/navbar/Navbar.css";
+              document.head.appendChild(importedCSS);
+            });
+        };
+      </script>
+    <div class="wholeContainer">
+        <section class="shortDescription">
+            <h3>End Of Course Summative Assignment</h3>
+            <div class="contain">                  
+                <div class="toDo">To do: Make a submission</div>
+              
+                 <div class="assignmentStatusDiv">
+                    <p>Opened: <span class="opendDate" datetime="2024-02-03T12:30:00">February 03, 2024 at 12:30 PM</span> </p>
+                    <p>Due: <span class="dateOfSubmission"  datetime="2024-02-13T10:05:00">February 13, 2024 at 10:05 PM</span></p>
+                 </div>
+                 <button class="addSubmission-btn" onclick="scrollToSubmit()" >Add Submission</button>
+            </div>
+          
+        </section>
+    
+        <section>
+            <table class="javaScoreSheet">
+                <thead>
+                    SUBMISSION STATUS
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Submission Status</td>
+                        <td id="submissionStatus">Submit for grading</td>
+                    </tr>
+                    <tr>
+                        <td>Grading status</td>
+                        <td id="gradingStatus"></td>
+                    </tr>
+                    <tr>
+                        <td>Submission date</td>
+                        <td class="dateOfSubmission" datetime="2024-02-13T10:05:00">February 13, 2024 at 10:05 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Time remaining</td>
+                        <td id="timer"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Modified</td>
+                        <td id="lastModified"></td>
+                    </tr>
+                    <tr>
+                        <td>File Submissions</td>
+                        <td id="submitAssignment">
+                            <form id="fileSubmissionForm" action="https://webhook.site/73122fb7-06b2-4f36-b284-284f4eff9fc5" method="post" enctype="multipart/form-data">
+                                <label for="AssignmentTwoInput">Submit file:</label>
+                                <input type="file" name="file" id="AssignmentTwoInput"  required accept=".pdf">
+                                <br>
+                                <input type="submit" value="Submit" id="submit" class="addSubmission-btn">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Submission Coments</td>
+                        <td>none</td>
+                    </tr>
+                </tbody>
+                </table> 
+        </section>
+    </div>
+    
+        
+   
+    <script src="submission.js"></script>
+</body>
+</html>
