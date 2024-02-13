@@ -1,78 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="home.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
-    <style>
-        p {
-
-        }
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <script>
-        window.onload = function () {
-          fetch("../../components/navbar/Navbar.html")
-            .then((response) => response.text())
-            .then((data) => {
-              document.body.innerHTML = data + document.body.innerHTML;
-              var importedCSS = document.createElement("link");
-  
-              importedCSS.rel = "stylesheet";
-              importedCSS.href = "../../components/navbar/Navbar.css";
-              document.head.appendChild(importedCSS);
-              var importedScript = document.createElement("script");
-              importedScript.src = "../../components/navbar/navbar.js";
-              document.head.appendChild(importedScript);
-            });
-        };
-      </script>
+      window.onload = function () {
+        fetch("../../components/navbar/Navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.body.innerHTML = data + document.body.innerHTML;
+            var importedCSS = document.createElement("link");
+
+            importedCSS.rel = "stylesheet";
+            importedCSS.href = "../../components/navbar/Navbar.css";
+            document.head.appendChild(importedCSS);
+            var importedScript = document.createElement("script");
+            importedScript.src = "../../components/navbar/navbar.js";
+            document.head.appendChild(importedScript);
+          });
+      };
+    </script>
     <main>
-        
-        <section id="home-page-main-introduction">
-            <p>Welcome to LMS!</p>
-        </section>
+      <section id="home-page-main-introduction">
+        <p>Welcome to LMS!</p>
+      </section>
 
-
-        <section id="main-contents">
-            <div class="main-boxes">
-                <a href="../profile/Profile.html"><P> visit profile </P></a>
-            </div>
-            <div class="main-boxes">
-                <a href="../courses/Courses.html"><P> visit courses</P></a>
-            </div><div class="main-boxes">
-                <a href="../grade/Grade.html"><P> visit Your Grades</P></a>
-            </div>
-
-        </section>
-
-
-
-        
+      <section id="main-contents">
+        <div class="main-boxes">
+          <a href="../profile/Profile.html"><p>visit profile</p></a>
+        </div>
+        <div class="main-boxes">
+          <a href="../courses/Courses.html"><p>visit courses</p></a>
+        </div>
+        <div class="main-boxes">
+          <a href="../grade/Grade.html"><p>visit Your Grades</p></a>
+        </div>
+      </section>
     </main>
 
-
     <footer>
-        <section class="footer-heading">
-            <ul>
-                <li><a href="">Terms</a></li>
-                <li><a href="">Privacy</a></li>
-                <li><a href="">Policy</a></li>
-            </ul>
-        </section>
+      <section class="footer-heading">
+        <ul>
+          <li><a href="">Terms</a></li>
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Policy</a></li>
+        </ul>
+      </section>
 
-        <section class="footer-end">
-            <p>&copy; 2023 Top Learning. All rights reserved.</p>
-        </section>
-       
+      <section class="footer-end">
+        <p>&copy; 2023 Top Learning. All rights reserved.</p>
+      </section>
     </footer>
-</body>
+  </body>
 </html>
