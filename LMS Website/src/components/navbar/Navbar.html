@@ -19,21 +19,36 @@
   </head>
   <body>
     <nav class="nav">
-      <ul class="nav_left_ul">
-        <li>
-          <a
-            href="src/pages/dashboard/Dashboard.html"
-            style="
-              font-size: 30px;
-              font-weight: bold;
-              text-shadow: 1px 1px 2px white;
-            "
-            >LMS</a
+      <div class="nav_left">
+        <ul class="nav_left_ul">
+          <li>
+            <a
+              href="src/pages/dashboard/Dashboard.html"
+              style="
+                font-size: 30px;
+                font-weight: bold;
+                text-shadow: 1px 1px 2px white;
+              "
+              >LMS</a
+            >
+          </li>
+          <li>
+            <a href="../../pages//dashboard//Dashboard.html">Dashboard</a>
+          </li>
+          <li><a href="../../pages/courses/Courses.html">My Courses</a></li>
+          <span
+            class="material-symbols-outlined"
+            onclick="showDropdownListsRight()"
           >
-        </li>
-        <li><a href="src/pages/dashboard/Dashboard.html">Dashboard</a></li>
-        <li><a href="../../pages/courses/Courses.html">My Courses</a></li>
-      </ul>
+            lists
+          </span>
+        </ul>
+        <div class="dropdown_lists_right" id="dropdown_lists_right">
+          <a href="/src/pages/profile/Profile.html">Dashboard</a> <br />
+          <a href="../../pages/grade/Grade.html">My Courses</a><br />
+          <a href="../../pages/login/login.html">Home</a><br />
+        </div>
+      </div>
       <div class="nav_right">
         <ul class="nav_right_ul">
           <li>

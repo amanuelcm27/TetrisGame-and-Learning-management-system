@@ -1,21 +1,3 @@
-// window.onload = function () {
-//   fetch("../messaging/Messaging.html")
-//     .then((response) => response.text())
-//     .then((data) => {
-//       document.getElementById("messaging_wrapper").innerHTML = data;
-//       // document.body.innerHTML = document.body.innerHTML + data;
-
-//       var importedCSS = document.createElement("link");
-//       importedCSS.rel = "stylesheet";
-//       importedCSS.href = "../messaging/Messaging.css";
-//       document.head.appendChild(importedCSS);
-
-//       var importedScript = document.createElement("script");
-//       importedScript.src = "../messaging/messaging.js";
-//       document.head.appendChild(importedScript);
-//     });
-// };
-
 function showDropdownLists() {
   let dropDownLists = document.getElementById("dropdown_lists");
   let dropDownListClass = dropDownLists.classList;
@@ -26,6 +8,15 @@ function showDropdownLists() {
   }
 }
 
+function showDropdownListsRight() {
+  let dropDownLists = document.getElementById("dropdown_lists_right");
+  let dropDownListClass = dropDownLists.classList;
+  if (dropDownListClass.contains("dropdown_lists_show")) {
+    dropDownLists.classList.remove("dropdown_lists_show");
+  } else {
+    dropDownLists.classList.add("dropdown_lists_show");
+  }
+}
 function showMessageApp() {
   const messageApp = document.getElementById("messaging_wrapper");
   if (messageApp.classList.contains("show")) {
