@@ -4,12 +4,16 @@
 }
 .messaging {
   width: 480px;
+<<<<<<< HEAD
   background-color: rgba(0, 0, 0, 0.945);
   height: 800px;
+=======
+  background-color: rgba(138, 130, 130, 0.226);
+  height: 700px;
+>>>>>>> origin/HEAD
   border: 1px solid rgb(156, 151, 151);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  border-radius: 10px;
 }
 .search_input {
   padding: 8px;
@@ -24,7 +28,7 @@
   justify-content: end;
 }
 .message_section {
-  background-color: rgba(161, 156, 156, 0.651);
+  background-color: rgba(255, 255, 255, 0.651);
   border-top: 1px solid gray;
   border-bottom: 1px solid rgb(170, 166, 166);
   display: flex;

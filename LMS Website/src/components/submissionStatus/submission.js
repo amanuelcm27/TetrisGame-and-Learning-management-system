@@ -59,6 +59,6 @@ function updateSubmissionStatus() {
 }
 function scrollToSubmit() {
     document.getElementById('submit').scrollIntoView({ behavior: 'smooth' });
-    submit.style.cssText="transform:translateY(20px); transition-delay:0.8; transition-duration:2s; margin-bottom:90px;"
-    
+    submit.style.cssText="transform:scale(1.1); transition-delay:0.8; transition-duration:2s; margin:20px;"
+
 }

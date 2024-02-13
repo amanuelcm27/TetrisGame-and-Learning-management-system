@@ -20,9 +20,13 @@
   margin: 12px;
   width: 400px;
   height: 200px;
-  border: 1px solid rgba(208, 113, 24, 0.79);
+  border: 1px solid rgba(0, 0, 0, 0.79);
   position: relative;
+  box-shadow: 1px 1px 2px rgb(0, 0, 0);
   border-radius: 8px;
+}
+.course:hover {
+  transform: scale(1.05);
 }
 .course_logo_wrapper {
   height: 50%;

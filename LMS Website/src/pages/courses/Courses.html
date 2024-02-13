@@ -14,9 +14,13 @@
           .then((data) => {
             document.body.innerHTML = data + document.body.innerHTML;
             var importedCSS = document.createElement("link");
+
             importedCSS.rel = "stylesheet";
             importedCSS.href = "../../components/navbar/Navbar.css";
             document.head.appendChild(importedCSS);
+            var importedScript = document.createElement("script");
+            importedScript.src = "../../components/navbar/navbar.js";
+            document.head.appendChild(importedScript);
           });
       };
     </script>
@@ -43,7 +47,7 @@
             <p class="course_logo">IP</p>
           </div>
           <a
-            href="/src/pages/coursedetail/Coursedetail.html"
+            href="../coursedetail/Coursedetail.html"
             class="course_name"
             >Internet Programming</a
           >
@@ -58,7 +62,7 @@
             <p class="course_logo">OOP</p>
           </div>
           <a
-            href="/src/pages/coursedetail/Coursedetail.html"
+            href="../coursedetail/Coursedetail.html"
             class="course_name"
             >Object Oriented Programming</a
           >
@@ -73,7 +77,7 @@
             <p class="course_logo">DSA</p>
           </div>
           <a
-            href="/src/pages/coursedetail/Coursedetail.html"
+            href="../coursedetail/Coursedetail.html"
             class="course_name"
             >Data Structures And Algorithm</a
           >
@@ -88,7 +92,7 @@
             <p class="course_logo">COA</p>
           </div>
           <a
-            href="/src/pages/coursedetail/Coursedetail.html"
+            href="../coursedetail/Coursedetail.html"
             class="course_name"
             >Computer Architecture and Organization</a
           >
@@ -103,7 +107,7 @@
             <p class="course_logo">SAM</p>
           </div>
           <a
-            href="/src/pages/coursedetail/Coursedetail.html"
+            href="../coursedetail/Coursedetail.html"
             class="course_name"
             >System Analysis and Modeling</a
           >

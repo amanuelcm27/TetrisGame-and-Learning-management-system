@@ -14,17 +14,21 @@
             .then((data) => {
               document.body.innerHTML = data + document.body.innerHTML;
               var importedCSS = document.createElement("link");
+  
               importedCSS.rel = "stylesheet";
               importedCSS.href = "../../components/navbar/Navbar.css";
               document.head.appendChild(importedCSS);
+              var importedScript = document.createElement("script");
+              importedScript.src = "../../components/navbar/navbar.js";
+              document.head.appendChild(importedScript);
             });
         };
       </script>
     <div class="wholeContainer">
         <section class="shortDescription">
-            <h3>End Of Course Summative Assignment</h3>
+            <h3>Cousre Assigment Submission</h3>
             <div class="contain">                  
-                <div class="toDo">To do: Make a submission</div>
+                <div class="toDo"> Make a submission</div>
               
                  <div class="assignmentStatusDiv">
                     <p>Opened: <span class="opendDate" datetime="2024-02-03T12:30:00">February 03, 2024 at 12:30 PM</span> </p>
@@ -80,9 +84,6 @@
                 </table> 
         </section>
     </div>
-    
-        
-   
     <script src="submission.js"></script>
 </body>
 </html>
