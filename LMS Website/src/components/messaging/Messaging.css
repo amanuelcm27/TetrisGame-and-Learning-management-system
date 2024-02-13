@@ -4,13 +4,8 @@
 }
 .messaging {
   width: 480px;
-<<<<<<< HEAD
-  background-color: rgba(0, 0, 0, 0.945);
-  height: 800px;
-=======
   background-color: rgba(138, 130, 130, 0.226);
   height: 700px;
->>>>>>> origin/HEAD
   border: 1px solid rgb(156, 151, 151);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
