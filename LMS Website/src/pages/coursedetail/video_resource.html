@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <style>
+    .video-container {
+        display: flex;
+        width: 800px;
+        justify-content: center;
+        margin-left: 20px;
+    }
+    .video-card {
+        width: 700px;
+        
+    }
+    </style>
+
+</head>
+<body>
+    <script>
+        window.onload = function () {
+          fetch("../../components/navbar/Navbar.html")
+            .then((response) => response.text())
+            .then((data) => {
+              document.body.innerHTML = data + document.body.innerHTML;
+              var importedCSS = document.createElement("link");
+  
+              importedCSS.rel = "stylesheet";
+              importedCSS.href = "../../components/navbar/Navbar.css";
+              document.head.appendChild(importedCSS);
+              var importedScript = document.createElement("script");
+              importedScript.src = "../../components/navbar/navbar.js";
+              document.head.appendChild(importedScript);
+            });
+        };
+    </script>
+    <div class="video-container">
+        <div class="video-card">
+            <video src="dolby.mp4" controls> Video of Course</video>
+        </div>
+    </div>
+    
+</body>
+</html>

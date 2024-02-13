@@ -34,7 +34,21 @@ function showDetail(className) {
     );
   }
 }
+function fetchOutline(htmlPath, cssPath, jsPath) {
+  fetch(htmlPath)
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("sub_body").innerHTML = data;
+      var importedCSS = document.createElement("link");
 
+      importedCSS.rel = "stylesheet";
+      importedCSS.href = cssPath;
+      document.head.appendChild(importedCSS);
+      var importedScript = document.createElement("script");
+      importedScript.src = jsPath;
+      document.head.appendChild(importedScript);
+    });
+}
 function fetchGrade(htmlPath, cssPath, jsPath) {
   fetch(htmlPath)
     .then((response) => response.text())
